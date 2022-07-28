@@ -55,6 +55,13 @@ aside {
     grid-column-start: 1;
 }
 
+.profile {
+    border-radius: 50%;
+    height: 75%;
+    width: 75%;
+    margin-top: 10%;
+}
+
 #about {
     grid-column: 2 / span 2;
     padding: 50px;
@@ -71,7 +78,7 @@ aside {
 i {
     width: 80px;
     height: 80px;
-    padding: 0px 60px;
+    padding: 0px 80px;
 }
 
 /* Projects section */
@@ -82,8 +89,13 @@ i {
 }
 
 .project-container-one {
-    grid-column: 2;
+    grid-column: 2 / span 1;
     padding: 10%;
+}
+
+.project-container-one img {
+    height: 60%;
+    width: 75%;
 }
 
 .project-container-two {
@@ -91,14 +103,35 @@ i {
     padding: 10%;
 }
 
+.project-container-two img {
+    height: 75%;
+    width: 75%;
+}
+
 .project-container-three {
     grid-column: 2;
     padding: 10%;
 }
 
+.project-container-three img {
+    height: 75%;
+    width: 75%;
+}
+
 .project-container-four {
     grid-column: 3;
     padding: 10%;
+}
+
+.project-container-four img {
+    height: 75%;
+    width: 75%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
 }
 
 @media screen and (max-width: 600px) {
