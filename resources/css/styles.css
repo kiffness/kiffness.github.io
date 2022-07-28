@@ -1,0 +1,36 @@
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+nav ul li {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+}
+
+li .right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul li .right,
+    nav ul li {
+        float: none;
+    }
+}
+
+nav {
+    padding-bottom: 50px;
+}
+
+#skills img {
+    width: 80px;
+    height: 80px;
+}

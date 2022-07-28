@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1b25b1dec3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="resources/css/styles.css">
   </head>
 
   <body>
 
   <nav>
     <ul>
-      <li>Name</li>
-      <li>About Me</li>
+      <li class="name">Kyle Taylor</li>
       <li>Projects</li>
       <li>Contact</li>
+      <li class="right">About Me</li>
     </ul>
   </nav>
 
@@ -24,9 +25,9 @@
     <img src="" alt="Profile Picture">
   </aside>
 
-  <section>
+  <section id="about">
     <p>
-      Hi! My name is Kyle and I am a junior devoloper, I started off my journey in a 1st line support role
+      Hi! My name is Kyle, and I am a junior developer, I started off my journey in a 1st line support role
       I wasn't satisfied and wanted to see what else I could do, ever since I was young I wanted to code 
       However I was put off by people telling me I needed to be a maths wiz and growing up in a 3rd world country
       internet access was limited.
@@ -34,9 +35,9 @@
     <br>
     <p>
       I moved to the UK and I got my break working at a company called John Smedley in Matlock, whilst working there
-      I saw a lot of oppurtunity to try and automate some very outdated tasks so took to learning python, With this knowledge
+      I saw a lot of opportunity to try and automate some very outdated tasks so took to learning python, With this knowledge
       I was able to create a form using ms power apps, this then saved the data to a sharepoint table, then the data was exported
-      using a powershell wrapper in python. I then further used my new found Python skills to manipulate the data and generate reports
+      using a powershell wrapper in python. I then further used my new-found Python skills to manipulate the data and generate reports
       that were emailed to interested parties on a schedule with cron (it was all run on a linux vm I set up)
     </p>
     <br>
@@ -44,6 +45,47 @@
       My other interests outside of programming and IT are gaming and fishing, love getting out in nature on the weekends to do some
       fishing, seen as though we programmers tend to sit at a desk for 8 hours a day
     </p>
+  </section>
+
+  <section id="#projects">
+    <card class="project1">
+      <img src="" alt="Project 1">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae ex eu est eleifend condimentum.
+        Sed elementum enim vulputate augue congue convallis. Pellentesque vel vehicula nisi.
+      </p>
+    </card>
+    <card class="project2">
+      <img src="" alt="Project 2">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae ex eu est eleifend condimentum.
+        Sed elementum enim vulputate augue congue convallis. Pellentesque vel vehicula nisi.
+      </p>
+    </card>
+    <card class="project3">
+      <img src="" alt="Project 3">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae ex eu est eleifend condimentum.
+        Sed elementum enim vulputate augue congue convallis. Pellentesque vel vehicula nisi.
+      </p>
+    </card>
+    <card class="project4">
+      <img src="" alt="Project 4">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae ex eu est eleifend condimentum.
+        Sed elementum enim vulputate augue congue convallis. Pellentesque vel vehicula nisi.
+      </p>
+    </card>
+  </section>
+
+  <section id="skills">
+    <i class="fa-brands fa-html5 fa-5x"></i>
+    <i class="fa-brands fa-css3 fa-5x"></i>
+    <i class="fa-brands fa-js fa-5x"></i>
+    <i class="fa-brands fa-python fa-5x"></i>
+    <img src="resources/images/c-sharp-c.svg" alt="icon for c sharp">
+    <img src="resources/images/file-type-powershell.svg" alt="icon for powershell">
+    <i class="fab fa-node fa-5x"></i>
   </section>
 
 	<script src="index.js"></script>
