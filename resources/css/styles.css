@@ -1,3 +1,19 @@
+section {
+    padding: 50px;
+}
+
+/* Grid Start */
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/*Nav Section*/
+nav {
+    grid-column: span 3;
+    padding-bottom: 50px;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -15,22 +31,48 @@ nav ul li {
     float: left;
 }
 
-li .right {
+li.right {
     float: right;
 }
+
+/* About Me Section */
+aside {
+    grid-column-start: 1;
+}
+
+#about {
+    grid-column: 2 / span 2;
+    padding: 50px;
+    margin: 50px;
+}
+
+/* Skills Section */
+#skills {
+    grid-column: 1 / span 3;
+    background-color: lightgray;
+}
+
+.skillsimg,
+i {
+    width: 80px;
+    height: 80px;
+    padding: 0px 80px;
+}
+
+/* Projects section */
+#projects {
+    padding: 100px;
+    margin: 10px;
+}
+
+.card-project-one {
+    grid-column: 1 / span 3;
+}
+
 
 @media screen and (max-width: 600px) {
     nav ul li .right,
     nav ul li {
         float: none;
     }
-}
-
-nav {
-    padding-bottom: 50px;
-}
-
-#skills img {
-    width: 80px;
-    height: 80px;
 }
