@@ -5,7 +5,7 @@ section {
 /* Grid Start */
 .container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 /*Nav Section*/
@@ -56,19 +56,35 @@ aside {
 i {
     width: 80px;
     height: 80px;
-    padding: 0px 80px;
+    padding: 0px 60px;
 }
 
 /* Projects section */
-#projects {
-    padding: 100px;
-    margin: 10px;
+.projects {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
 }
 
-.card-project-one {
-    grid-column: 1 / span 3;
+.project-container-one {
+    grid-column: 2;
+    padding: 10%;
 }
 
+.project-container-two {
+    grid-column: 1;
+    padding: 10%;
+}
+
+.project-container-three {
+    grid-column: 2;
+    padding: 10%;
+}
+
+.project-container-four {
+    grid-column: 3;
+    padding: 10%;
+}
 
 @media screen and (max-width: 600px) {
     nav ul li .right,
